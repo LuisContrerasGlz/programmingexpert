@@ -30,3 +30,16 @@ if first_word in second_word:
 else:
     print("The first word isn't contained in the second one")
 
+"""
+
+3. Write a program that asks the user to input a sentence and outputs how many words are in the sentence.
+   Try using an f-string to embed the number of words in your output, and don't worry about singularization when there's only one word
+
+"""
+
+
+user_sentence = input("Enter a sentence: ")
+word_count = user_sentence.split(" ")
+
+print(f"There are {len(word_count)} words in this sentence")
+

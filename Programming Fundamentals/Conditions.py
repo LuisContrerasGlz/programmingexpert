@@ -1,5 +1,5 @@
 """
-w, x, y, z evaluates condition to true
+1. w, x, y, z evaluates condition to true
 
 """
 
@@ -23,7 +23,7 @@ print(condition_4)
 print(condition_5)
 
 """
-w, x, y, z evaluates condition to true
+2. w, x, y, z evaluates condition to true
 
 """
 

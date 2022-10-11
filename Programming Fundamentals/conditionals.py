@@ -1,6 +1,8 @@
 """
-Write a program that asks the user to input their age and tells them if they're old enough to ride a roller coaster. 
-The minimum age to ride the roller coaster in this question is 13
+
+1. Write a program that asks the user to input their age and tells them if they're old enough to ride a roller coaster. 
+   The minimum age to ride the roller coaster in this question is 13
+   
 """
 
 age = float(input("How old are you? "))
@@ -11,8 +13,10 @@ else:
     print("You can ride the roller coaster!")
 
 """
-Write a program that asks the user to input their favorite programming
-language and outputs a specific string based on their answer.
+
+2. Write a program that asks the user to input their favorite programming
+   language and outputs a specific string based on their answer.
+
 """
 
 fav_language = input("What's your favorite programming language? ")

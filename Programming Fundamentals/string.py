@@ -43,3 +43,17 @@ word_count = user_sentence.split(" ")
 
 print(f"There are {len(word_count)} words in this sentence")
 
+"""
+
+4. Write a program that uses a single print statement to output the following text:
+
+      *
+     ***
+    *****
+   *******
+    *****
+     ***
+      *
+"""
+
+print("    *\n   ***\n  *****\n *******\n  *****\n   ***\n    *")

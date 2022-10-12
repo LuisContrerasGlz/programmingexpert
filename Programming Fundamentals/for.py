@@ -64,3 +64,22 @@ lst = [45, 24, 22, 1, 45, 2, 12, 13, 16, 10, 0, -7]
 for i in range(len(lst)):
     if (lst[i] % 2 == 0) and (i % 2 == 1):
         print(lst[i]) 
+
+
+"""
+
+5. Use nested for loops to iterate through the provided list,
+   which contains other lists, and print the respective sums of the inner
+   lists, each on a separate line.
+
+"""
+
+lst = [[2, 3, 4], [-2, -4, 0], [1, 2], [1, 1, 1, 5, 6], [0, 9, 8, 7]]
+
+for inner_list in lst:
+    sum_of_inner_list = 0
+
+    for item in inner_list:
+        sum_of_inner_list += item
+
+    print(sum_of_inner_list)

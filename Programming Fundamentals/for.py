@@ -83,3 +83,17 @@ for inner_list in lst:
         sum_of_inner_list += item
 
     print(sum_of_inner_list)
+
+"""
+
+6. Use a single for loop to iterate through the provided list of
+   numbers, and for each number, print the sum of the number and the one
+   directly to its right. In other words, print
+
+"""
+
+lst = [-2, 0, 4, 5, 1, 2]
+
+for i in range(len(lst)-1):
+        sum_of_items = lst[i] + lst[i + 1]
+        print(sum_of_items)

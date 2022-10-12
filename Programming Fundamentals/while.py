@@ -53,6 +53,6 @@ idx = 0
 
 while idx < len(nums):
     num = nums[idx]
-    print(num * num)
+    print(num ** 2)
 
     idx += 1

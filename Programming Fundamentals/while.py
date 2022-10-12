@@ -41,3 +41,18 @@ if len(words) > 0:
 
     average_word_length = word_length_sum / len(words)
     print(f"The average word length is: {average_word_length}.")
+
+"""
+
+3. Use a while loop to print the squares of the numbers: 1, 3, 6, 10, 1 and 21
+
+"""
+
+nums = [1, 3, 6, 10, 15, 21]
+idx = 0
+
+while idx < len(nums):
+    num = nums[idx]
+    print(num * num)
+
+    idx += 1

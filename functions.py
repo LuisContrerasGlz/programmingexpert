@@ -42,3 +42,23 @@ def string_lengths(strings):
         lst2.append(len(i))
       
     return lst2
+
+
+"""
+
+  Write a function named compare_lists.
+  That accepts two optional parameters, lst1 and lst2
+
+  The function should return the number of unique common elements between the two lists. 
+  If either of the lists isn't passed as a parameter, it should be treated as an empty list.
+
+  You can assume that the input lists will only contain integers.
+
+"""
+
+def compare_lists(lst1=[], lst2=[]):
+    lst1_set = set(lst1)
+    lst2_set = set(lst2)
+    set_intersection = lst1_set.intersection(lst2_set)
+
+    return len(set_intersection)

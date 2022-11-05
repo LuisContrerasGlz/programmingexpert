@@ -24,3 +24,21 @@ def find_all_odds(lst):
             lst2.append(i)
 
     return lst2
+
+
+"""
+
+    Write the function string_lengths(strings), 
+    which takes in a list of strings and returns a new list containing the lengths of the
+    strings, in their relevant order. You can assume that strings will only contain strings.
+
+"""
+
+def string_lengths(strings):
+
+    lst2 = [] 
+    
+    for i in strings:
+        lst2.append(len(i))
+      
+    return lst2

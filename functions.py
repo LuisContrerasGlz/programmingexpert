@@ -81,3 +81,28 @@ def trim_list(lst, elements_to_trim):
         trimmed_list.append(element)
 
     return trimmed_list
+
+
+"""
+
+    Write the function running_sums(numbers)
+    Which takes in a list of integers and returns a new list of the same length as numbers
+    Where the element at index i in the new
+    list is equal to numbers[0] + numbers[1] + ... + numbers[i - 1] + numbers[i]
+
+"""
+
+def running_sums(numbers):
+    # Declaring an empty list
+    sums = []
+
+    # Making current_sum variable 0 to start
+    current_sum = 0
+    # Go to every value in the numbers list
+    for number in numbers:
+        # Add to current sum the current number in the list adding it so it add every time
+        current_sum += number
+        # Add to the sums list what we get to fill the new list
+        sums.append(current_sum)
+    # Return the new list with the sums
+    return sums

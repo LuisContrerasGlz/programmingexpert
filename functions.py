@@ -17,12 +17,18 @@ original list, in the order in which they appear. You can assume that lst will o
 """
 
 def find_all_odds(lst):
+
+    # Declaring the new list
     lst2 = [] 
     
+    # Checking each value to see which one is odd and then append that to the list which will get the new list of odd numbers
+
     for i in lst:
         if i % 2 == 1:
             lst2.append(i)
 
+    # Returning lst2
+    
     return lst2
 
 
@@ -36,11 +42,15 @@ def find_all_odds(lst):
 
 def string_lengths(strings):
 
+    # Declaring the new list
+
     lst2 = [] 
     
+    # Going to the elements of the list and adding the len of each string appending it to the new list
     for i in strings:
         lst2.append(len(i))
       
+    # Returning the new list
     return lst2
 
 
@@ -57,10 +67,17 @@ def string_lengths(strings):
 """
 
 def compare_lists(lst1=[], lst2=[]):
+
+    # Converting each list to a set
+
     lst1_set = set(lst1)
     lst2_set = set(lst2)
+
+    # Checking the intersection of the sets and adding that value to set_intersection
+
     set_intersection = lst1_set.intersection(lst2_set)
 
+    # Returning the len of set_intersection which will be the number of unique common elements between the two lists.
     return len(set_intersection)
 
 
@@ -74,12 +91,22 @@ def compare_lists(lst1=[], lst2=[]):
 """
 
 def trim_list(lst, elements_to_trim):
+
+    # Declaring empty list
+
     trimmed_list = []
 
+    # Goint to the elements of the list - the elements to trim
+
     for idx in range(len(lst) - elements_to_trim):
+
+        # Saving current element in the list
         element = lst[idx]
+
+        # Adding to the trimmed list the current element
         trimmed_list.append(element)
 
+    #Returning the trimmed list
     return trimmed_list
 
 
@@ -93,16 +120,22 @@ def trim_list(lst, elements_to_trim):
 """
 
 def running_sums(numbers):
+
     # Declaring an empty list
     sums = []
 
     # Making current_sum variable 0 to start
+
     current_sum = 0
     # Go to every value in the numbers list
+
     for number in numbers:
         # Add to current sum the current number in the list adding it so it add every time
+
         current_sum += number
+
         # Add to the sums list what we get to fill the new list
         sums.append(current_sum)
+
     # Return the new list with the sums
     return sums

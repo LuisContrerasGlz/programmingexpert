@@ -7,8 +7,11 @@
 """
 
 def replace(lst, target, swap_value):
+    # Loop to the index of lst
     for idx in range(len(lst)):
+        # Saying the current element is the current of the list
         element = lst[idx]
 
+        # Checking if element is equal to target and if it is we modify the list with the value
         if element == target:
             lst[idx] = swap_value

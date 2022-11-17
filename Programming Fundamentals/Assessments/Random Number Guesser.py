@@ -22,17 +22,19 @@
 
 import random
 
-inicio = int(input("Enter the start of the range: "))
+inicio = input("Enter the start of the range: ")
 # print(inicio)
-fin = int(input("Enter the end of the range: "))
+while not inicio.isdigit():
+    print('Please enter a valid number.')
+    inicio = input('Enter the start of the range: ')
+fin = input("Enter the end of the range: ")
+while not fin.isdigit() or int(fin) < int(inicio):
+    print('Please enter a valid number.')
+    fin = input('Enter the end of the range: ')
 # print(fin)
 
-if fin < inicio:
-    print("Please enter a valid number.")
-    fin = int(input("Enter the end of the range: "))
 
-
-num_aleatorio = random.randint(inicio, fin)
+num_aleatorio = random.randint(int(inicio), int(fin))
 # print(num_aleatorio)
 
 adivino = int(input("Guess a number: "))

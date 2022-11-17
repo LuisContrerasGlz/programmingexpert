@@ -10,12 +10,41 @@
     Your program needs to ensure that the range of numbers given is valid. 
     For example, if the user enters a number for the end of the range that is less
     than the start of the range your program needs ask them to enter a valid
-    number. Your program must also handle any other errors that might occur,
-    like the user entering a string instead of an integer.
+    number. 
 
     Note: You may assume the start of the range will never be negative (i.e you
     don't need to handle negative values).
 
-    
+
 
 """
+
+import random
+
+inicio = int(input("Enter the start of the range: "))
+# print(inicio)
+fin = int(input("Enter the end of the range: "))
+# print(fin)
+
+if fin < inicio:
+    print("Please enter a valid number.")
+    fin = int(input("Enter the end of the range: "))
+
+
+num_aleatorio = random.randint(inicio, fin)
+# print(num_aleatorio)
+
+adivino = int(input("Guess a number: "))
+
+contador_intentos = 1
+
+while adivino != num_aleatorio:
+    adivino = int(input("Guess a number: "))
+    contador_intentos += 1
+
+print(f"You guessed the number in {contador_intentos} attempts")
+
+
+    
+    
+    

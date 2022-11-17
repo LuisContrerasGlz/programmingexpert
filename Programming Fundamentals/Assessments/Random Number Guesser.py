@@ -19,6 +19,7 @@
 
 """
 
+
 import random
 
 inicio = int(input("Enter the start of the range: "))
@@ -43,7 +44,6 @@ while adivino != num_aleatorio:
     contador_intentos += 1
 
 print(f"You guessed the number in {contador_intentos} attempts")
-
 
     
     

@@ -17,11 +17,14 @@
 
 
 def create_strings_from_characters(frequencies, string1, string2):
+
+    # Calling our can_create_string_from_frequencies for both parameters string1 and string2
     can_create_string1 = can_create_string_from_frequencies(
         frequencies, string1)
     can_create_string2 = can_create_string_from_frequencies(
         frequencies, string2)
 
+    # Checking the conditions to select what we will return based on the specific case
     if (not can_create_string1) or (not can_create_string2):
         if can_create_string1 or can_create_string2:
             return 1
@@ -36,7 +39,7 @@ def create_strings_from_characters(frequencies, string1, string2):
 
     return 2
 
-
+# Function to determine if we can create the individual strings with the characters
 def can_create_string_from_frequencies(frequencies, string):
     for character in set(string):
         if string.count(character) > frequencies.get(character, 0):

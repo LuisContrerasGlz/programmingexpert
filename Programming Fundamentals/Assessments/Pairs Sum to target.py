@@ -7,11 +7,14 @@
 
 """
 
+# Decñaromg pir funtion with the parameters of list1, list2 and target
 def pairs_sum_to_target(list1, list2, target):
     pairs = []
 
+# Looping both lists
     for i, value1 in enumerate(list1):
         for j, value2 in enumerate(list2):
+            # Checking if the values equal target and then appending the pair to the pairs list to return it later
             if value1 + value2 == target:
                 pairs.append([i, j])
 

@@ -75,14 +75,20 @@ class BankAccount:
         self.account_holder_name = account_holder_name
         self._balance = 0.0
 
+    # Def getter and returning the rounded of balance
     def get_balance(self):
         return round(self._balance)
 
+    # Def the setter method checking the correct range of our checks
     def set_balance(self, balance):
+
+        # Checking if it is a number
         if type(balance) not in [int, float]:
             return
 
+        # Checking the range
         if balance < 0 or balance >= 100000:
             return
 
+        # If all the conditions are good we have selt._balance been what was passed in there
         self._balance = balance

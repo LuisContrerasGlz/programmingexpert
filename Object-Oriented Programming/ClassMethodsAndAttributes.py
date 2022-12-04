@@ -17,17 +17,24 @@ x = Person.population
 # Problem 2
 
 class Employee:
+
+    # Defining our class attributes first as the best practice indicates
+
     number_of_employees = 0
     average_age = 0
     average_salary = 0
 
+    # Defining the constructor taking self, name, age, and salary
     def __init__(self, name, age, salary):
         self.name = name
         self.age = age
         self.salary = salary
 
+        # Making total age and total salary with the computation bellow
         total_age = Employee.average_age * Employee.number_of_employees
         total_salary = Employee.average_salary * Employee.number_of_employees
+
+        # Updating the Employee.average_age, average_Salary and at the end adding 1 each time to the number_of_employees
         Employee.average_age = (total_age + age) / (Employee.number_of_employees + 1)
         Employee.average_salary = (total_salary + salary) / (Employee.number_of_employees + 1)
         Employee.number_of_employees += 1

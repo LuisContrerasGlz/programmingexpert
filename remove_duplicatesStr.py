@@ -22,5 +22,7 @@ print(converted_str)
 # Removing duplicate characters from a string if order does matter
 
 # We use dict instead of a set since we care about the order and since Python 3.7 preserves the insertion order of the keys. 
+# We create the dictionary with fromkeys and each element of the string will be a key in the dictionary wich later we join back
+
 result = "".join(dict.fromkeys(string_to_check))
 print(result)

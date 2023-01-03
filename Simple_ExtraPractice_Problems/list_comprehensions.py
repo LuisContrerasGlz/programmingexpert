@@ -7,3 +7,8 @@ print(numbers)
 
 numbers3 = [i for i in range(1,101) if i % 3 != 0]
 print(numbers3)
+
+# Using list comprehensions to create a table with nested lists
+
+table = [[i for i in range(1,6)] for j in range(4)]
+print(table)

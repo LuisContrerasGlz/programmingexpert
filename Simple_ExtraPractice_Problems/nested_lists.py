@@ -6,3 +6,9 @@ for row in table:
     for cell in row:
         print("Element: ", cell)
 
+# Printing in a table like format
+
+for row in table:
+    for cell in row:
+        print(cell, "", end="")
+    print()

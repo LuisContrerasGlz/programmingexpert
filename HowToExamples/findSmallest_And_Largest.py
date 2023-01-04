@@ -34,5 +34,16 @@ second_largest = sorted_numbers[-2]
 print(f"Second smallest number: {second_smallest}")
 print(f"Second largest number: {second_largest}")
 
+# We can also use the min() and max() functions with a key argument to specify a function that returns the value that should be used for comparison.
+
+# Find the second smallest and second largest string in a list based on length
+words = ["cat", "window", "defenestrate"]
+sorted_words = sorted(words, key=len)
+
+second_shortest = sorted_words[1]
+second_longest = sorted_words[-2]
+
+print(f"Second shortest word: {second_shortest}")
+print(f"Second longest word: {second_longest}")
 
 

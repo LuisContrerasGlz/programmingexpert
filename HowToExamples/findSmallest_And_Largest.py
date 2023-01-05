@@ -46,4 +46,14 @@ second_longest = sorted_words[-2]
 print(f"Second shortest word: {second_shortest}")
 print(f"Second longest word: {second_longest}")
 
+# Other way with for 
+
+my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+largest = my_list[0]
+
+for i in my_list[1:]:
+    if i > largest:
+        largest = i
+
+print(largest)
 

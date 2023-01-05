@@ -12,3 +12,22 @@ print(numbers3)
 
 table = [[i for i in range(1,6)] for j in range(4)]
 print(table)
+
+"""
+
+List comprehension allows you to create new lists from existing ones in a concise and elegant way.
+The syntax is [expression for element in list if conditional]
+
+which is actually an equivalent of the following code:
+
+for element in list:
+    if conditional:
+        expression
+
+"""
+
+cubed = [num ** 3 for num in range(5)]
+print(cubed)  # outputs: [0, 1, 8, 27, 64]
+
+
+

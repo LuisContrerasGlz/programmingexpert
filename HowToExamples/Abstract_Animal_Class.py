@@ -11,6 +11,7 @@ When animal_sound() is called on an instance of the "Lion" class it should outpu
 
 """
 
+
 class Animal:
     def sleep(self):
         print("ZzzZzz")
@@ -21,6 +22,7 @@ class Animal:
     def wake_up(self):
         self.animal_sound()
         print("I am awake!")
+
 
 class Lion(Animal):
     def animal_sound(self):

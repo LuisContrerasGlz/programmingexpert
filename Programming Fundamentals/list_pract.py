@@ -1,4 +1,4 @@
-lst = [1,2,3,4,5,3,6,3]
+lst = [1, 2, 3, 4, 5, 3, 6, 3]
 
 x = int(input("Enter a number: "))
 

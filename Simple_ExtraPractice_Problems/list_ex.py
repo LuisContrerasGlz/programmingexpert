@@ -10,9 +10,11 @@ write a line of code that prints the length of the existing list (Step 3).
 
 """
 
-hat_list = [1, 2, 3, 4, 5]  # This is an existing list of numbers hidden in the hat.
+# This is an existing list of numbers hidden in the hat.
+hat_list = [1, 2, 3, 4, 5]
 
-hat_list[len(hat_list) // 2] = int(input("Enter a number to replace the middle element: "))
+hat_list[len(hat_list) //
+         2] = int(input("Enter a number to replace the middle element: "))
 
 # To remove the last element from the list:
 

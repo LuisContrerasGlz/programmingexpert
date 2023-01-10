@@ -4,10 +4,10 @@
 
 """
 
-w = 1  
-x = 1  
-y = 3  
-z = 2  
+w = 1
+x = 1
+y = 3
+z = 2
 
 # `condition_` variables.
 condition_1 = w < x + y
@@ -29,10 +29,10 @@ print(condition_5)
 
 """
 
-w = "Hello"  
-x = "hello"  
-y = "hello"  
-z = "d"  
+w = "Hello"
+x = "hello"
+y = "hello"
+z = "d"
 
 # `condition_` variables.
 condition_1 = w != "a"

@@ -11,6 +11,7 @@ Your classes should represent this.
 
 """
 
+
 class Animal:
     def __init__(self, age, weight, height):
         self.age = age

@@ -1,5 +1,6 @@
 import math
 
+
 class ShapeInterface:
     def get_area(self):
         raise NotImplementedError

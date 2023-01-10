@@ -15,7 +15,7 @@
 numerador = input("Enter the numerator: ")
 denominador = input("Enter the denominator: ")
 
-try:   
+try:
     numerador = float(numerador)
 except Exception as e:
     print("The numerator is not a number.")

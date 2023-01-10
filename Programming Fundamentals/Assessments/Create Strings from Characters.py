@@ -40,6 +40,8 @@ def create_strings_from_characters(frequencies, string1, string2):
     return 2
 
 # Function to determine if we can create the individual strings with the characters
+
+
 def can_create_string_from_frequencies(frequencies, string):
     for character in set(string):
         if string.count(character) > frequencies.get(character, 0):

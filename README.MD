@@ -1,6 +1,6 @@
 # programmingexpert.io
 
-This project contains the problem sets and projects from [programmingexpert.io.](https://www.programmingexpert.io/product) 
+This project contains the problem sets and projects from [programmingexpert.io.](https://www.programmingexpert.io/product)
 
 Topics include:
 

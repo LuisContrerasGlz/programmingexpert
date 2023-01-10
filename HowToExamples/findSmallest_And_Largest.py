@@ -6,7 +6,7 @@ largest = max(numbers)
 print(f"Smallest number: {smallest}")
 print(f"Largest number: {largest}")
 
-# Using min() and max() functions with a key argument to specify a function that returns the value that should be used for comparison. 
+# Using min() and max() functions with a key argument to specify a function that returns the value that should be used for comparison.
 
 # Find the smallest and largest string in a list based on length
 words = ["cat", "window", "defenestrate"]
@@ -46,7 +46,7 @@ second_longest = sorted_words[-2]
 print(f"Second shortest word: {second_shortest}")
 print(f"Second longest word: {second_longest}")
 
-# Other way with for 
+# Other way with for
 
 my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
 largest = my_list[0]
@@ -56,4 +56,3 @@ for i in my_list[1:]:
         largest = i
 
 print(largest)
-

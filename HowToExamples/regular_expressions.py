@@ -34,7 +34,6 @@ Regular expressions can include special characters, such as . (match any charact
 
 """
 
-import re
 
 string = "The quick brown fox"
 
@@ -45,4 +44,3 @@ if match:
     print("Match found:", match.group())
 else:
     print("Match not found")
-

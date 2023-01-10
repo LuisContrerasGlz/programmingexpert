@@ -4,7 +4,8 @@
 # Start(Inclusive):Stop(Exclusive):Step
 
 def rev_sting(x):
-  return x[::-1]
+    return x[::-1]
+
 
 mytxt = rev_sting("Reversing the string is fun!!")
 

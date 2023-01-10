@@ -26,7 +26,6 @@ import re
 import sys
 
 
-
 #
 # Complete the 'reverse_words_order_and_swap_cases' function below.
 #
@@ -37,17 +36,18 @@ import sys
 def reverse_words_order_and_swap_cases(sentence):
     # Split the sentence into a list of words
     words = sentence.split(" ")
-    
+
     # Reverse the list of words
     words.reverse()
-    
+
     # Join the reversed list of words into a single string
     reversed_sentence = " ".join(words)
-    
+
     # Swap the cases of the reversed sentence
     swapped_sentence = reversed_sentence.swapcase()
-    
+
     return swapped_sentence
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

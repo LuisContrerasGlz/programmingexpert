@@ -29,7 +29,6 @@ import re
 import sys
 
 
-
 #
 # Complete the 'missingCharacters' function below.
 #
@@ -40,18 +39,19 @@ import sys
 def missingCharacters(s):
     # Create a set of all lowercase letters and digits
     all_chars = set('abcdefghijklmnopqrstuvwxyz0123456789')
-    
+
     # Create a set of the characters present in the input string
     present_chars = set(s)
-    
+
     # Compute the set of missing characters
     missing_chars = all_chars - present_chars
-    
+
     # Sort the missing characters
     sorted_chars = sorted(missing_chars)
-    
+
     # Return the sorted characters as a string
     return ''.join(sorted_chars)
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

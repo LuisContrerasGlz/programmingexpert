@@ -1,16 +1,17 @@
-# Code to remove duplicates from a string 
+# Code to remove duplicates from a string
 
 def duplicate_letters(text):
     # Create a new list using split function on text
-	word_list = text.split()
+    word_list = text.split()
     # Looping the word_list
-	for word in word_list:
+    for word in word_list:
         # if the len of word is greater than the len of the set of word we return false
-		if len(word) > len(set(word)):
-			return False
-	return True
+        if len(word) > len(set(word)):
+            return False
+    return True
 
 # Removing duplicate characters from a string if order does not matter
+
 
 string_to_check = input("Please enter a string: ")
 
@@ -21,7 +22,7 @@ print(converted_str)
 
 # Removing duplicate characters from a string if order does matter
 
-# We use dict instead of a set since we care about the order and since Python 3.7 preserves the insertion order of the keys. 
+# We use dict instead of a set since we care about the order and since Python 3.7 preserves the insertion order of the keys.
 # We create the dictionary with fromkeys and each element of the string will be a key in the dictionary wich later we join back
 
 result = "".join(dict.fromkeys(string_to_check))

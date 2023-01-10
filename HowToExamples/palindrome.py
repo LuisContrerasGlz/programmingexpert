@@ -7,6 +7,7 @@ def isPalindrome(str):
     for i in str:
         if str[startIndex] != str[endIndex]:
             return False
-        return True 
+        return True
+
 
 print(isPalindrome("racercar"))

@@ -1,4 +1,4 @@
-# Using the .isnumeric() string method 
+# Using the .isnumeric() string method
 
 user_number = input("Please provide a number: ")
 

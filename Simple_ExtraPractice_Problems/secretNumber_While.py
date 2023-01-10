@@ -17,7 +17,7 @@ will check whether the number entered by the user is the same as the number pick
 secret_number = 777
 
 print(
-"""
+    """
 +================================+
 | Welcome to my game, muggle!    |
 | Enter an integer number        |

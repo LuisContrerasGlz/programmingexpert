@@ -17,4 +17,3 @@ for number in bets:
         hits += 1
 
 print(hits)
-

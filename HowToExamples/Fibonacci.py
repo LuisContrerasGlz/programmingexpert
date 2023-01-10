@@ -11,21 +11,23 @@ Each subsequent number in the series is the sum of the previous two numbers.
 Therefore, the nth number in the series is the sum of the (n-1)th and (n-2)th numbers.
 """
 
+
 def fibonacci(n):
-  # Set the initial values of the series
-  a, b = 0, 1
+    # Set the initial values of the series
+    a, b = 0, 1
 
-  # Initialize an empty list to store the series
-  series = []
+    # Initialize an empty list to store the series
+    series = []
 
-  # Generate the series
-  while b < n:
-    # Append the next number in the series to the list
-    series.append(b)
-    # Calculate the next number in the series
-    a, b = b, a + b
+    # Generate the series
+    while b < n:
+        # Append the next number in the series to the list
+        series.append(b)
+        # Calculate the next number in the series
+        a, b = b, a + b
 
-  return series
+    return series
+
 
 # Test the function
 print(fibonacci(10))

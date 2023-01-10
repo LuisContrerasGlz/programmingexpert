@@ -5,8 +5,10 @@ Your function should add the two numbers and return the result.
 
 """
 
-def add(x,y):
+
+def add(x, y):
     return x + y
+
 
 """
 
@@ -16,11 +18,12 @@ original list, in the order in which they appear. You can assume that lst will o
 
 """
 
+
 def find_all_odds(lst):
 
     # Declaring the new list
-    lst2 = [] 
-    
+    lst2 = []
+
     # Checking each value to see which one is odd and then append that to the list which will get the new list of odd numbers
 
     for i in lst:
@@ -28,7 +31,7 @@ def find_all_odds(lst):
             lst2.append(i)
 
     # Returning lst2
-    
+
     return lst2
 
 
@@ -40,16 +43,17 @@ def find_all_odds(lst):
 
 """
 
+
 def string_lengths(strings):
 
     # Declaring the new list
 
-    lst2 = [] 
-    
+    lst2 = []
+
     # Going to the elements of the list and adding the len of each string appending it to the new list
     for i in strings:
         lst2.append(len(i))
-      
+
     # Returning the new list
     return lst2
 
@@ -65,6 +69,7 @@ def string_lengths(strings):
   You can assume that the input lists will only contain integers.
 
 """
+
 
 def compare_lists(lst1=[], lst2=[]):
 
@@ -90,6 +95,7 @@ def compare_lists(lst1=[], lst2=[]):
 
 """
 
+
 def trim_list(lst, elements_to_trim):
 
     # Declaring empty list
@@ -106,7 +112,7 @@ def trim_list(lst, elements_to_trim):
         # Adding to the trimmed list the current element
         trimmed_list.append(element)
 
-    #Returning the trimmed list
+    # Returning the trimmed list
     return trimmed_list
 
 
@@ -118,6 +124,7 @@ def trim_list(lst, elements_to_trim):
     list is equal to numbers[0] + numbers[1] + ... + numbers[i - 1] + numbers[i]
 
 """
+
 
 def running_sums(numbers):
 

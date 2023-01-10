@@ -1,4 +1,5 @@
 # Remove unwanted characters from a string
+import re
 s = "hello, world!"
 
 s = s.replace(",", "")   # Remove ,
@@ -7,7 +8,6 @@ s = s.replace("!", "")   # Remove !
 print(s)
 
 # Remove unwanted characters from a string using regular expressions
-import re
 
 s = "hello, world!"
 

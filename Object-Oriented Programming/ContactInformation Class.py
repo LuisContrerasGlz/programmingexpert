@@ -8,6 +8,7 @@
 
 """
 
+
 class ContactInformation:
     def __init__(self, first_name, last_name, email, phone_number, country=None):
         self.first_name = first_name
@@ -17,5 +18,7 @@ class ContactInformation:
         self.country = country
 
 
-person1 = ContactInformation("Luis", "Contreras", "luis.fco.contreras@gmail.com", 449114564, "Mex")
-person2 = ContactInformation("Fernando", "Contreras", "luis.fer.contreras@gmail.com", 449114564, "Mex")
+person1 = ContactInformation(
+    "Luis", "Contreras", "luis.fco.contreras@gmail.com", 449114564, "Mex")
+person2 = ContactInformation(
+    "Fernando", "Contreras", "luis.fer.contreras@gmail.com", 449114564, "Mex")

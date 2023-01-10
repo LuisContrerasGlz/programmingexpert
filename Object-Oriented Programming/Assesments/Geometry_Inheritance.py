@@ -44,9 +44,9 @@ class Square(Rectangle):
 def get_triangle_area(side1, side2, side3):
     semi_perimeter = (side1 + side2 + side3) / 2
     return math.sqrt(
-        semi_perimeter * 
-        (semi_perimeter - side1) * 
-        (semi_perimeter - side2) * 
+        semi_perimeter *
+        (semi_perimeter - side1) *
+        (semi_perimeter - side2) *
         (semi_perimeter - side3)
     )
 

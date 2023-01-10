@@ -4,7 +4,7 @@
 # Start(Inclusive):Stop(Exclusive):Step
 
 # Creating a list
-my_list = [2,4,5,6,7,8,6]
+my_list = [2, 4, 5, 6, 7, 8, 6]
 
 # Reversing that list saving it into a new variable list called rev_list
 rev_list = my_list[::-1]

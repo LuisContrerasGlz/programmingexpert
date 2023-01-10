@@ -13,5 +13,3 @@ if found:
     print("Element found at index", i)
 else:
     print("absent")
-
-

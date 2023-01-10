@@ -13,6 +13,7 @@
 
 """
 
+
 def get_n_longest_unique_words(words, n):
 
     # Using the get_unique_words function to create the list from the parameter
@@ -26,6 +27,7 @@ def get_n_longest_unique_words(words, n):
 
 # Defining a funtion to check the unique words of the list
 
+
 def get_unique_words(words):
     # Declaring an empty list called unique words
 
@@ -36,5 +38,5 @@ def get_unique_words(words):
         if words.count(word) == 1:
             unique_words.append(word)
 
-    # We return the unique words 
+    # We return the unique words
     return unique_words

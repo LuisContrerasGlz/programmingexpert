@@ -10,7 +10,8 @@ string = input("Enter a string: ")
 character_frequencies = {}
 
 for character in string:
-    character_frequencies[character] = character_frequencies.get(character, 0) + 1
+    character_frequencies[character] = character_frequencies.get(
+        character, 0) + 1
 
 for key in character_frequencies:
     frequency = character_frequencies[key]

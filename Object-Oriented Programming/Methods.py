@@ -13,7 +13,7 @@ class Rectangle:
         self.x = x
         self.y = y
 
-    # Defining get position method which returns x and y in a tuple 
+    # Defining get position method which returns x and y in a tuple
     def get_position(self):
         return (self.x, self.y)
 
@@ -22,6 +22,7 @@ class Rectangle:
         return self.width * self.height
 
 # Problem 2
+
 
 class Group:
     def __init__(self, name, members=[]):
@@ -70,6 +71,7 @@ class Group:
 
 # Problem 4
 
+
 class BankAccount:
     def __init__(self, account_holder_name):
         self.account_holder_name = account_holder_name
@@ -93,7 +95,8 @@ class BankAccount:
         # If all the conditions are good we have selt._balance been what was passed in there
         self._balance = balance
 
-# Problem 5 
+# Problem 5
+
 
 class BankAccount:
     def __init__(self, account_holder_name):

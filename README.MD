@@ -12,4 +12,8 @@ Topics include:
 - Programming With Go
 - Projects
 
+It also contains extra practice programs I use to improve on the concepts from programmingExpert.
+
+All of this using Python programming language.
+
 For more certifications and complete profile please check my LinkedIn: https://www.linkedin.com/in/luis-francisco-contreras-gonzalez-45791715a/

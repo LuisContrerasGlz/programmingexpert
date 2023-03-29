@@ -17,3 +17,76 @@ In the first round of the tournament the teams with the most regular season wins
 Your program should output the games that should be played in the format seen below. The first game outputted should contain the team with the most regular season wins, the second game should contain the team with the second most regular season wins, etc. The home team of each game should be the team with the least wins of the two, if there is a tie in wins your program can chose any appropriate team.
 
 """
+
+import itertools
+
+# Function to validate team name
+
+
+def is_valid_team_name(name):
+    words = name.split()
+    return len(words) <= 2 and all(len(word) >= 2 for word in words)
+
+# Function to validate number of games
+
+
+def is_valid_num_games(num_games, num_teams):
+    return num_games >= num_teams - 1
+
+# Function to validate number of wins
+
+
+def is_valid_num_wins(num_wins, num_games):
+    return 0 <= num_wins <= num_games
+
+
+# Ask for number of teams
+while True:
+    num_teams = int(input("Enter the number of teams in the tournament: "))
+    if num_teams >= 2:
+        break
+    else:
+        print("The minimum number of teams is 2, try again.")
+
+# Ask for team names
+teams = []
+for i in range(1, num_teams + 1):
+    while True:
+        name = input("Enter the name for team #{}: ".format(i))
+        if is_valid_team_name(name):
+            teams.append(name)
+            break
+        else:
+            print(
+                "Team names must have at least 2 characters and at most 2 words, try again.")
+
+# Ask for number of games
+while True:
+    num_games = int(input("Enter the number of games played by each team: "))
+    if is_valid_num_games(num_games, num_teams):
+        break
+    else:
+        print("Invalid number of games. Each team plays each other at least once in the regular season, try again.")
+
+# Ask for number of wins
+wins = []
+for team in teams:
+    while True:
+        num_wins = int(input("Enter the number of wins {} had: ".format(team)))
+        if is_valid_num_wins(num_wins, num_games):
+            wins.append(num_wins)
+            break
+        else:
+            print(
+                "The number of wins must be between 0 and the number of games played, try again.")
+
+# Generate the games
+sorted_teams = [team for _, team in sorted(zip(wins, teams), reverse=True)]
+games = list(itertools.zip_longest(
+    sorted_teams[:num_teams//2], sorted_teams[num_teams//2:]))
+
+# Print the games
+print("Generating the games to be played in the first round of the tournament...")
+for i, game in enumerate(games):
+    home_team, away_team = sorted(game, key=lambda x: wins[teams.index(x)])
+    print("Game #{}: Home: {} VS Away: {}".format(i+1, home_team, away_team))

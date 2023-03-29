@@ -9,7 +9,6 @@ Topics include:
 - Advanced Programming
 - Software Design
 - Software Engineering Tools
-- Programming With Go
 - Projects
 
 It also contains extra practice programs I use to improve on the concepts from programmingExpert.

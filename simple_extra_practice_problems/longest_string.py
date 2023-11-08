@@ -26,3 +26,16 @@ def get_longest_word(input_string):
     words = words = input_string.replace('.', ' ').replace(',', ' ').split()
     longest_word = max(words, key=len)
     return longest_word
+
+# Option 2
+
+def get_longest_word2(input_string):
+
+    words2 = input_string.replace('.', ' ').replace(',', ' ').split()
+    temp_max_word2 = ''
+
+    for word in words2:
+        if len(word) > len(temp_max_word2):
+            temp_max_word2 = word
+    
+    return temp_max_word2

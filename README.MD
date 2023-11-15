@@ -19,4 +19,4 @@ All of this using Python programming language.
 
 https://certificate.algoexpert.io/ProgrammingExpert%20Certificate%20PE-28285c3c8a
 
-For more certifications and complete profile please check my LinkedIn: https://www.linkedin.com/in/luis-francisco-contreras-gonzalez-45791715a/
+For more certifications and complete profile please check my LinkedIn: https://www.linkedin.com/in/luis-contreras-gonzalez/

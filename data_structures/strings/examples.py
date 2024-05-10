@@ -29,4 +29,13 @@ original_str = "Hello World! This is a test."
 no_spaces_str = "".join(original_str.split())
 print(no_spaces_str)  # Output: "HelloWorld!Thisisatest."
 
+# Convert the value of txt to upper case.
+
+txt = "Hello World"
+txt = txt.upper()
+
+# Convert the value of txt to lower case.
+
+txt = "Hello World"
+txt = txt.lower()
 

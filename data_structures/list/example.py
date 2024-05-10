@@ -13,3 +13,14 @@ fruits[0] = "kiwi"
 
 fruits = ["apple", "banana", "cherry"]
 fruits.append("orange")
+
+# Use the insert method to add "lemon" as the second item in the fruits list.
+
+fruits = ["apple", "banana", "cherry"]
+fruits.insert(1,"lemon")
+
+# Use the remove method to remove "banana" from the fruits list.
+
+fruits = ["apple", "banana", "cherry"]
+fruits.remove("banana")
+

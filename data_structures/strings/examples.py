@@ -39,3 +39,7 @@ txt = txt.upper()
 txt = "Hello World"
 txt = txt.lower()
 
+# Replace the character H with a J.
+
+txt = "Hello World"
+txt = txt.replace("H", "J")

@@ -49,3 +49,29 @@ txt = txt.replace("H", "J")
 age = 36
 txt = "My name is John, and I am {}"
 print(txt.format(age))
+
+# Convert a string to a list
+
+"""
+
+Split a String by a Delimiter
+
+The most common way to convert a string into a list is by using the str.split() method, which splits a string into a list based on a specified delimiter. 
+The default delimiter is whitespace, but you can specify any character or string as the delimiter.
+
+"""
+
+# Example with space-separated words
+sentence = "This is a test"
+
+# Split into a list of words
+words = sentence.split()  # Default is whitespace
+print(words)  # Output: ["This", "is", "a", "test"]
+
+# Example with a comma-separated string
+csv_data = "1,2,3,4,5"
+
+# Split by a comma
+numbers = csv_data.split(",")
+print(numbers)  # Output: ["1", "2", "3", "4", "5"]
+

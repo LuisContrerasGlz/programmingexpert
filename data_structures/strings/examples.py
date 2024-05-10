@@ -43,3 +43,9 @@ txt = txt.lower()
 
 txt = "Hello World"
 txt = txt.replace("H", "J")
+
+# insert the correct syntax to add a placeholder for the age parameter.
+
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age))

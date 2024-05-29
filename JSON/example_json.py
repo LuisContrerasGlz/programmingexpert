@@ -26,3 +26,20 @@ y = json.dumps(x)
 
 # the result is a JSON string:
 print(y)
+
+"""
+
+You can convert Python objects of the following types, into JSON strings:
+
+dict
+list
+tuple
+string
+int
+float
+True
+False
+None
+
+"""
+

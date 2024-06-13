@@ -11,3 +11,12 @@ mylist = ["a", "b", "a", "c", "c"]
 dict_no_dup = dict.fromkeys(mylist)
 mylist = list(dict_no_dup)
 print(mylist)
+
+# Function 
+
+def remove_dup_lst(x):
+  return list(dict.fromkeys(x))
+
+mylist = remove_dup_lst(["a", "b", "a", "c", "c"])
+
+print(mylist)

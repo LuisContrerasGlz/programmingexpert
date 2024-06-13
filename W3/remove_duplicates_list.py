@@ -8,5 +8,6 @@ With a Dictionary:
 """
 
 mylist = ["a", "b", "a", "c", "c"]
-mylist = list(dict.fromkeys(mylist))
+dict_no_dup = dict.fromkeys(mylist)
+mylist = list(dict_no_dup)
 print(mylist)

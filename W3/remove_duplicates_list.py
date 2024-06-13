@@ -20,3 +20,23 @@ def remove_dup_lst(x):
 mylist = remove_dup_lst(["a", "b", "a", "c", "c"])
 
 print(mylist)
+
+"""
+
+Using a set:
+
+    1. Convert the list to a set to remove duplicates
+    2. Convert the set back to a list
+
+"""
+
+def remove_duplicates(input_list):
+    # Convert the list to a set to remove duplicates
+    unique_elements = set(input_list)
+    # Convert the set back to a list
+    return list(unique_elements)
+
+original_list = [1, 2, 2, 3, 4, 4, 5]
+unique_list = remove_duplicates(original_list)
+print("Original list:", original_list)
+print("List after removing duplicates:", unique_list)

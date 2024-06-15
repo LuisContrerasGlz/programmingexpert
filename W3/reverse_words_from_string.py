@@ -23,7 +23,15 @@ print("Original string:", original_string)
 print("Reversed words string:", reversed_string)
 
 
-# With For loop
+"""
+With For loop
+
+1. Split the string into words.
+2. Use a for loop to iterate through the words from the end to the beginning.
+3. Append each word to a new list.
+4. Join the list of reversed words back into a string.
+
+"""
 
 def reverse_words(input_string):
     # Split the input string into words
